@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/better-dropdown/static/css/main.f855e6bc.css",
-    "main.js": "/better-dropdown/static/js/main.83ce6e56.js",
+    "main.css": "/better-dropdown/static/css/main.49a930c0.css",
+    "main.js": "/better-dropdown/static/js/main.94167d19.js",
     "static/js/787.e041e6c6.chunk.js": "/better-dropdown/static/js/787.e041e6c6.chunk.js",
-    "static/media/logo.svg": "/better-dropdown/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/better-dropdown/index.html",
-    "main.f855e6bc.css.map": "/better-dropdown/static/css/main.f855e6bc.css.map",
-    "main.83ce6e56.js.map": "/better-dropdown/static/js/main.83ce6e56.js.map",
+    "main.49a930c0.css.map": "/better-dropdown/static/css/main.49a930c0.css.map",
+    "main.94167d19.js.map": "/better-dropdown/static/js/main.94167d19.js.map",
     "787.e041e6c6.chunk.js.map": "/better-dropdown/static/js/787.e041e6c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.83ce6e56.js"
+    "static/css/main.49a930c0.css",
+    "static/js/main.94167d19.js"
   ]
 }
