@@ -1,18 +1,43 @@
-import { BetterDropdown } from "./components/betterDropdown"
-import cityPopulations from "./data/cityPopulations.json"
-import { parseData } from "./lib/parsePopulations"
+import { useEffect, useState } from "react"
+import { Questions } from "./home/questions"
+import { Itinerary } from "./home/itinerary"
+import { Divider } from "@mui/joy"
+import { useMediaQuery } from "@mui/material"
 
-const App = () => (
-  <div className="m-4 space-y-4">
-    <div className="text-4xl font-extralight">✌️ Hello</div>
-    <div>Guess who just made a new dropdown 😎</div>
-    <div className="rounded-md p-4 border-2 border-sky-500 sm:w-[600px] space-y-8">
-      <div className="text-xl font-semibold">
-        Where are you travelling from?
+const App = () => {
+  const [isLoading, setIsLoading] = useState(false)
+  const [city, setCity] = useState<string | null>(null)
+  const [duration, setDuration] = useState<number | null>(null)
+  const [focus, setFocus] = useState<string | null>(null)
+  const isDesktop = useMediaQuery("(min-width:600px)")
+
+  return (
+    <div className="m-4 space-y-4">
+      <div className="text-4xl font-extralight">✌️ Hello</div>
+      <div>
+        Guess who just <s>made a new dropdown</s> <b>integrated with ChatGPT</b>{" "}
+        😎
       </div>
-      <BetterDropdown populationData={parseData(cityPopulations)} />
+      <div className="flex flex-col justify-between sm:flex-row w-full space-y-8 sm:space-x-8 h-full">
+        <Questions
+          isLoading={isLoading}
+          city={city}
+          setCity={setCity}
+          duration={duration}
+          setDuration={setDuration}
+          focus={focus}
+          setFocus={setFocus}
+        />
+        {!isDesktop && <Divider orientation="horizontal" />}
+        <Itinerary
+          isLoading={isLoading}
+          setIsLoading={setIsLoading}
+          city={city}
+          duration={duration}
+          focus={focus}
+        />
+      </div>
     </div>
-  </div>
-)
-
+  )
+}
 export default App

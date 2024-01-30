@@ -4,15 +4,7 @@ interface DataEntry {
   population: number
 }
 
-export type PopulationData = {
-  location: string
-  population: number
-}[]
-
-export const parseData = (populationData: DataEntry[]): PopulationData =>
+export const parseData = (populationData: DataEntry[]): string[] =>
   populationData
-    .map(({ country, city, population }) => ({
-      location: `${city}, ${country}`,
-      population,
-    }))
     .sort((a, b) => b.population - a.population)
+    .map(({ country, city }) => `${city}, ${country}`)
