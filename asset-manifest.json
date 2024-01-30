@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/better-dropdown/static/css/main.099e4316.css",
-    "main.js": "/better-dropdown/static/js/main.66b72ca3.js",
+    "main.js": "/better-dropdown/static/js/main.f75ba323.js",
     "index.html": "/better-dropdown/index.html",
     "main.099e4316.css.map": "/better-dropdown/static/css/main.099e4316.css.map",
-    "main.66b72ca3.js.map": "/better-dropdown/static/js/main.66b72ca3.js.map"
+    "main.f75ba323.js.map": "/better-dropdown/static/js/main.f75ba323.js.map"
   },
   "entrypoints": [
     "static/css/main.099e4316.css",
-    "static/js/main.66b72ca3.js"
+    "static/js/main.f75ba323.js"
   ]
 }
